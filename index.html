@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="A page whose view-source is the page itself." />
+	<meta name="repository" content="https://github.com/BenjaminAster/view-source" />
+
+	<title>view-source:https://benjaminaster.com/view-source/</title>
+</head>
+
+<body>
+	<input type="checkbox" id="line-wrap" />
+	<header><label for="line-wrap">Line wrap</label></header>
+	<main>
+		<section>
+			<h1>Self-source-viewing page</h1>
+
+			<p>A page whose view-source is the page itself</p>
+		</section>
+
+		<section>
+			<span></span><span></span>
+			<span></span><span></span><span></span><span></span>
+			<span></span><span></span>
+			<span></span><span></span><span></span><span></span>
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+
+			<!----><span></span><!--
+			------><span></span><!--
+			------><span></span><!--
+			------><span></span><!--
+			------><span></span><!--
+			------><span></span><!--
+			------><span></span><!---->
+		</section>
+
+		<section>
+			<div>world</div>
+		</section>
+
+		<section>
+			<style>
+				:root {
+					color-scheme: dark;
+
+					--white-space: pre;
+					--line-numbers-background: #3c3c3c;
+					--line-numbers-border-color: #bbbbbb;
+					--line-numbers-text: gray;
+					--header-background: #3c3c3c;
+					--header-border: #bbbbbb;
+					--background-color: transparent;
+
+					--line-numbers-font-family: "Helvetica", sans-serif;
+					--line-numbers-contain: paint;
+					--header-display: flex;
+
+					--line-numbers-border-width: 1px;
+					--body-padding-top: 0;
+					--line-height: 15px;
+					--line-numbers-font-size: 9px;
+					--font-size: 13px;
+					--main-padding-inline: 5px;
+					--line-numbers-padding-left: 4px;
+					--line-numbers-padding-right: 4px;
+					--line-numbers-padding-top: 2px;
+					--tab-size: 4;
+					--line-numbers-min-width: 22px;
+
+					--doctype-color: silver;
+					--doctype-font-style: normal;
+					--doctype-font-weight: normal;
+
+					--doctype-html-color: silver;
+					--doctype-font-style: normal;
+					--doctype-font-weight: normal;
+
+					--angle-bracket-and-equals-color: #5db0d7;
+
+					--tag-color: var(--angle-bracket-and-equals-color);
+					--tag-font-weight: var(--angle-bracket-and-equals-color);
+					
+					--attribute-color: #9bbbdc;
+					--attribute-font-weight: normal;
+
+					--quote-color: var(--angle-bracket-and-equals-color);
+
+					--string-color: #f29766;
+				}
+				
+				@media (prefers-color-scheme: light) {
+					:root {
+						color-scheme: light;
+						--line-numbers-background: #f0f0f0;
+						--line-numbers-text: #948484;
+						--header-background: #f0f0f0;
+						
+						--angle-bracket-and-equals-color: #881280;
+						
+						--attribute-color: #994500;
+
+						--string-color: #1a1aa6;
+					}
+				}
+
+				@supports (-webkit-nbsp-mode: normal) {
+					:root {
+						--background-color: #333333;
+						--line-numbers-background: transparent;
+						--line-numbers-text: #ccc;
+						--line-numbers-border-color: #ccc;
+
+						--line-numbers-font-family: monospace;
+						--line-numbers-contain: none;
+						--header-display: none;
+
+						--line-numbers-min-width: initial;
+						--main-padding-inline: 10px;
+						--line-height: 15px;
+						--body-padding-top: 8px;
+						--line-numbers-padding-left: 8px;
+						--line-numbers-padding-right: 5px;
+						--line-numbers-padding-top: 0;
+						--line-numbers-font-size: 13px;
+						--tab-size: 8;
+					}
+
+					@media (prefers-color-scheme: light) {
+						:root {
+							--background-color: white;
+						}
+					}
+
+					header, input[type=checkbox]#line-wrap {
+						display: none !important;
+					}
+				}
+
+				@-moz-document url-prefix() {
+					:root {
+						--line-numbers-background: transparent;
+						--line-numbers-border-color: transparent;
+						--line-numbers-border-width: 0;
+						--line-numbers-text: #ccc;
+
+						--line-numbers-font-family: monospace;
+						--line-numbers-contain: none;
+						--header-display: none;
+
+						--line-numbers-min-width: 4ch;
+						--body-padding-top: 8px;
+						--line-numbers-padding-left: 8px;
+						--line-numbers-padding-right: 1ch;
+						--line-numbers-padding-top: 0;
+						--font-size: initial;
+						--line-numbers-font-size: initial;
+						--main-padding-inline: 0;
+					}
+				}
+
+				:root {
+					font-family: monospace;
+					tab-size: var(--tab-size);
+					background-color: var(--background-color);
+				}
+
+				body {
+					/* font-size: .8rem; */
+					font-size: var(--font-size);
+					box-sizing: border-box;
+					min-block-size: 100vh;
+					min-block-size: 100dvb;
+					margin: 0;
+					display: grid;
+					grid-template: auto 1fr / auto 1fr;
+					grid-template-areas: "header header" "line-numbers main";
+					padding-block-start: var(--body-padding-top);
+				}
+
+				input[type=checkbox]#line-wrap {
+					display: var(--header-display);
+					position: absolute;
+					/* opacity: 0; */
+					/* pointer-events: none; */
+					inset-block-start: 0;
+					inset-inline-start: 9ch;
+					margin-inline: 1px;
+				}
+
+				style {
+					display: block;
+					white-space: var(--white-space);
+				}
+
+				style::before {
+					/* content: "\9\9<style>"; */
+				}
+
+				style::after {
+					/* content: "<\/style>"; */
+				}
+
+				header {
+					display: var(--header-display);
+					/* position: sticky; */
+					inset-block-start: 0;
+					inset-inline: 0;
+					grid-area: header;
+					background-color: var(--header-background);
+					border-block-end: 1px solid var(--header-border);
+					min-block-size: 19px;
+					align-items: center;
+					inline-size: calc(100vw);
+					inline-size: calc(100vi);
+					/* box-sizing: border-box; */
+				}
+
+				header label {
+					inline-size: 100%;
+				}
+
+				aside {
+					grid-area: line-numbers;
+					background-color: var(--line-numbers-background);
+					border-inline-end: var(--line-numbers-border-width) solid var(--line-numbers-border-color);
+					counter-reset: line-number;
+					padding-inline-start: var(--line-numbers-padding-left);
+					padding-inline-end: var(--line-numbers-padding-right);
+					min-inline-size: var(--line-numbers-min-width);
+					/* padding-block-start: var(--line-numbers-padding-top); */
+					/* box-sizing: border-box; */
+					text-align: end;
+					color: var(--line-numbers-text);
+					font-size: var(--line-numbers-font-size);
+					font-family: var(--line-numbers-font-family);
+					line-height: var(--line-height);
+					/* overflow-y: hidden; */
+					/* overflow-block: hidden; */
+					contain: var(--line-numbers-contain);
+				}
+
+				aside > div {
+					translate: 0 var(--line-numbers-padding-top);
+				}
+
+				aside > div::before {
+					display: block;
+					counter-increment: line-number;
+					content: counter(line-number);
+				}
+
+				aside > div::after {
+					display: block;
+					counter-increment: line-number;
+					content: counter(line-number);
+				}
+
+				p, h1 {
+					margin: unset;
+					font-size: unset;
+					font-weight: unset;
+					font-family: unset;
+				}
+
+				main {
+					grid-area: main;
+					line-height: var(--line-height);
+					padding-inline: var(--main-padding-inline);
+					display: flex;
+					flex-direction: column;
+				}
+
+				section:nth-child(1) {
+					order: 2;
+				}
+
+				section:nth-child(2) {
+					order: 1;
+				}
+
+				section:nth-child(3) {
+					order: 3;
+				}
+
+				section:nth-child(4) {
+					order: 4;
+				}
+
+				section:nth-child(5) {
+					order: 5;
+				}
+
+				section:nth-child(2) > span::before,
+				section:nth-child(2) > span::after {
+					white-space: var(--white-space);
+					display: inline;
+				}
+
+				section:nth-child(2) > span:nth-child(1)::before {
+					content: '<!DOCTYPE';
+					color: var(--doctype-color);
+					font-style: var(--doctype-font-style);
+					font-weight: var(--doctype-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(1)::after {
+					content: ' html';
+					color: var(--doctype-html-color);
+					font-style: var(--doctype-html-font-style);
+					font-weight: var(--doctype-html-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(2)::before {
+					content: '>';
+					color: var(--doctype-color);
+					font-style: var(--doctype-font-style);
+					font-weight: var(--doctype-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(3)::before {
+					content: '\A<';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(3)::after {
+					content: 'html';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(4)::before {
+					content: ' lang';
+					color: var(--attribute-color);
+					font-weight: var(--attribute-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(4)::after {
+					content: '=';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(5)::before {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(5)::after {
+					content: 'en';
+					color: var(--string-color);
+				}
+
+				section:nth-child(2) > span:nth-child(6)::before {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(6)::after {
+					content: '>';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(7)::before {
+					content: '\A\A<';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(7)::after {
+					content: 'head';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(8)::before {
+					content: '>';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(9)::before {
+					content: '\A\9<';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(9)::after {
+					content: 'meta';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(10)::before {
+					content: ' charset';
+					color: var(--attribute-color);
+					font-weight: var(--attribute-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(10)::after {
+					content: '=';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(11)::before {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(11)::after {
+					content: 'UTF-8';
+					color: var(--string-color);
+				}
+
+				section:nth-child(2) > span:nth-child(12)::before {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(12)::after {
+					content: ' />';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(13)::before {
+					content: '\A\9<';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(13)::after {
+					content: 'meta';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(14)::before {
+					content: ' name';
+					color: var(--attribute-color);
+					font-weight: var(--attribute-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(14)::after {
+					content: '=';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(15)::before {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(15)::after {
+					content: 'viewport';
+					color: var(--string-color);
+				}
+
+				section:nth-child(2) > span:nth-child(16)::before {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(16)::after {
+					content: ' content';
+					color: var(--attribute-color);
+					font-weight: var(--attribute-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(17)::before {
+					content: '=';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(17)::after {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(18)::before {
+					content: 'width=device-width, initial-scale=1';
+					color: var(--string-color);
+				}
+
+				section:nth-child(2) > span:nth-child(18)::after {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(19)::before {
+					content: ' />';
+					color: var(--angle-bracket-and-equals-color);
+				}
+				
+				section:nth-child(2) > span:nth-child(20)::before {
+					content: '\A\9<';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(20)::after {
+					content: 'meta';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(21)::before {
+					content: ' name';
+					color: var(--attribute-color);
+					font-weight: var(--attribute-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(21)::after {
+					content: '=';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(22)::before {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(22)::after {
+					content: 'description';
+					color: var(--string-color);
+				}
+
+				section:nth-child(2) > span:nth-child(23)::before {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(23)::after {
+					content: ' content';
+					color: var(--attribute-color);
+					font-weight: var(--attribute-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(24)::before {
+					content: '=';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(24)::after {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(25)::before {
+					content: 'A page whose view-source is the page itself.';
+					color: var(--string-color);
+				}
+
+				section:nth-child(2) > span:nth-child(25)::after {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(26)::before {
+					content: ' />';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(27)::before {
+					content: '\A\9<';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(27)::after {
+					content: 'meta';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(28)::before {
+					content: ' name';
+					color: var(--attribute-color);
+					font-weight: var(--attribute-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(28)::after {
+					content: '=';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(29)::before {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(29)::after {
+					content: 'repository';
+					color: var(--string-color);
+				}
+
+				section:nth-child(2) > span:nth-child(30)::before {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(30)::after {
+					content: ' content';
+					color: var(--attribute-color);
+					font-weight: var(--attribute-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(31)::before {
+					content: '=';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(31)::after {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(32)::before {
+					content: 'https://github.com/BenjaminAster/view-source';
+					color: var(--string-color);
+				}
+
+				section:nth-child(2) > span:nth-child(32)::after {
+					content: '"';
+					color: var(--quote-color);
+				}
+
+				section:nth-child(2) > span:nth-child(33)::before {
+					content: ' />';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+
+				section:nth-child(2) > span:nth-child(34)::before {
+					content: '\A\9\9';
+				}
+
+				section:nth-child(2) > span:nth-child(34)::after {
+					display: inline-block;
+					content: '<\A<\A<\A<';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(35)::before {
+					display: inline-block;
+					content: 'span\Aspan\Aspan\Aspan';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(35)::after {
+					display: inline-block;
+					content: '>\A></\A>\A></';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(36)::before {
+					display: inline-block;
+					content: '\Aspan\A\Aspan';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(2) > span:nth-child(36)::after {
+					display: inline-block;
+					content: '\A>\A\A>';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(2) > span:nth-child(37)::before {
+				}
+
+				section:nth-child(2) > span:nth-child(37)::after {
+				}
+
+				section:nth-child(2) > span:nth-child(24)::before {
+				}
+
+				section:nth-child(2) > span:nth-child(24)::after {
+				}
+
+				section:nth-child(2) > span:nth-child(25)::before {
+				}
+
+				section:nth-child(2) > span:nth-child(25)::after {
+				}
+
+				input[type=checkbox]#line-wrap:checked ~ main {
+					--white-space: pre-wrap;
+				}
+
+				main::before {
+					/* content: '<!DOCTYPE html>\A<html lang="en">\A\A<head>\A\9<meta charset="UTF-8" />\A\9<meta name="viewport" content="width=device-width, initial-scale=1" />\A\A\9<title>view-source:https://benjaminaster.com/view-source/</title>\A</head>\A\A<body>\A\9<input type="checkbox" id="line-wrap" />\A\9<header><label for="line-wrap">Line wrap</label></header>\A\9<aside>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9</aside>\A\9<main>'; */
+					white-space: var(--white-space);
+				}
+
+				main::after {
+					/* content: '\9</main>\A</body>\A\A</html>'; */
+					white-space: var(--white-space);
+				}
+			</style>
+		</section>
+		
+		<section>
+			<div>end</div>
+		</section>
+	</main>
+	<aside>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+	</aside>
+</body>
+
+</html>

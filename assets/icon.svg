@@ -1,0 +1,22 @@
+<svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		:root {
+			color-scheme: dark light;
+		}
+
+		@media (prefers-color-scheme: light) {
+			:root {
+			}
+		}
+
+		text {
+			font-size: 20rem;
+			font-family: system-ui, sans-serif;
+			dominant-baseline: central;
+			text-anchor: middle;
+			fill: lightBlue;
+		}
+	</style>
+
+	<text x="240" y="240">v-s:</text>
+</svg>
