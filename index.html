@@ -17,28 +17,36 @@
 		<section>
 			<p>
 				Self-source-viewing page
-				<br />
-				<br />
-				<br />
-				<br />
-				This is a page whose view-source is the page itself. Press Ctrl/Cmd+U to view the source of this page.
+
+				This is a page whose view-source is the page itself.
+				Press [Ctrl/Cmd] + [U] to view the source of this page.
 			</p>
 		</section>
 
 		<section>
-			<!----><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><!--
-			------><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><!--
-			------><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><!--
-			------><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><!--
-			------><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+			<!----><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span>
 		</section>
 
 		<section>
-			<!----><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><!--
-			------><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><!--
-			------><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><!--
-			------><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><!--
-			------><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+			<!----><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span>
 		</section>
 
 		<section>
@@ -74,19 +82,15 @@
 					--doctype-font-style: normal;
 					--doctype-font-weight: normal;
 
-					--doctype-doctype-color: silver;
-					--doctype-doctype-font-style: normal;
-					--doctype-doctype-font-weight: normal;
-
 					--doctype-html-color: silver;
-					--doctype-font-style: normal;
-					--doctype-font-weight: normal;
+					--doctype-html-font-style: normal;
+					--doctype-html-font-weight: normal;
 
 					--angle-bracket-and-equals-color: #5db0d7;
 
 					--tag-color: var(--angle-bracket-and-equals-color);
 					--tag-font-weight: var(--angle-bracket-and-equals-color);
-					
+
 					--attribute-color: #9bbbdc;
 					--attribute-font-weight: normal;
 
@@ -97,7 +101,7 @@
 					--comment-color: #236e25;
 					--comment-font-style: normal;
 				}
-				
+
 				@media (prefers-color-scheme: light) {
 					:root {
 						color-scheme: light;
@@ -133,11 +137,44 @@
 						--line-numbers-padding-top: 0;
 						--line-numbers-font-size: 13px;
 						--tab-size: 8;
+
+						--doctype-color: #69f;
+						--doctype-font-style: italic;
+						--doctype-font-weight: bold;
+
+						--doctype-html-color: var(--tag-color);
+						--doctype-html-font-style: italic;
+						--doctype-html-font-weight: bold;
+
+						--tag-color: #a7a;
+						--tag-font-weight: bold;
+
+						--attribute-color: white;
+						--attribute-font-weight: bold;
+
+						--quote-color: var(--string-color);
+
+						--string-color: #bce;
+
+						--comment-color: #9c6;
+						--comment-font-style: italic;
+
+						--angle-bracket-and-equals-color: CanvasText;
 					}
 
 					@media (prefers-color-scheme: light) {
 						:root {
 							--background-color: white;
+
+							--doctype-color: #48b;
+
+							--tag-color: #808;
+
+							--attribute-color: black;
+
+							--string-color: blue;
+
+							--comment-color: #070;
 						}
 					}
 
@@ -165,6 +202,43 @@
 						--font-size: initial;
 						--line-numbers-font-size: initial;
 						--main-padding-inline: 0;
+
+						--doctype-color: lightgray;
+						--doctype-font-style: italic;
+
+						--doctype-html-color: lightgray;
+						--doctype-html-font-style: italic;
+
+						--angle-bracket-and-equals-color: CanvasText;
+
+						--tag-color: #f55e5e;
+						--tag-font-weight: bold;
+
+						--attribute-color: CanvasText;
+						--attribute-font-weight: bold;
+
+						--quote-color: CanvasText;
+
+						--string-color: #97bbff;
+
+						--comment-color: lightGreen;
+						--comment-font-style: italic;
+					}
+
+					@media (prefers-color-scheme: light) {
+						:root {
+							--doctype-color: steelBlue;
+							
+							--doctype-doctype-color: steelBlue;
+
+							--doctype-html-color: steelBlue;
+
+							--tag-color: purple;
+
+							--string-color: blue;
+
+							--comment-color: green;
+						}
 					}
 				}
 
@@ -249,17 +323,23 @@
 					contain: var(--line-numbers-contain);
 				}
 
-				aside > div {
+				aside > ul {
+					padding: 0;
+					margin: 0;
+					list-style: none;
+				}
+
+				aside > ul > li {
 					translate: 0 var(--line-numbers-padding-top);
 				}
 
-				aside > div::before {
+				aside > ul > li::before {
 					display: block;
 					counter-increment: line-number;
 					content: counter(line-number);
 				}
 
-				aside > div::after {
+				aside > ul > li::after {
 					display: block;
 					counter-increment: line-number;
 					content: counter(line-number);
@@ -271,6 +351,10 @@
 					padding-inline: var(--main-padding-inline);
 					display: flex;
 					flex-direction: column;
+				}
+
+				style {
+					margin-block: calc(var(--line-height) * -1);
 				}
 
 				section:nth-child(1) {
@@ -293,604 +377,566 @@
 					order: 5;
 				}
 
+				section:nth-child(6) {
+					order: 6;
+				}
+
+				section:nth-child(7) {
+					order: 7;
+				}
+
 				section:nth-child(2) > span::before,
 				section:nth-child(2) > span::after {
 					white-space: var(--white-space);
 				}
 
 				section:nth-child(2) > span:nth-child(1)::before {
-					content: '<!';
+					content: '<!DOCTYPE';
 					color: var(--doctype-color);
 					font-style: var(--doctype-font-style);
 					font-weight: var(--doctype-font-weight);
 				}
 
 				section:nth-child(2) > span:nth-child(1)::after {
-					content: 'DOCTYPE';
-					color: var(--doctype-color);
-					font-style: var(--doctype-font-style);
-					font-weight: var(--doctype-font-weight);
-				}
-
-				section:nth-child(2) > span:nth-child(2)::before {
 					content: ' html';
 					color: var(--doctype-html-color);
 					font-style: var(--doctype-html-font-style);
 					font-weight: var(--doctype-html-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(2)::after {
+				section:nth-child(2) > span:nth-child(2)::before {
 					content: '>';
 					color: var(--doctype-color);
 					font-style: var(--doctype-font-style);
 					font-weight: var(--doctype-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(3)::before {
+				section:nth-child(2) > span:nth-child(2)::after {
 					content: '\A<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(3)::after {
+				section:nth-child(2) > span:nth-child(3)::before {
 					content: 'html';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(4)::before {
+				section:nth-child(2) > span:nth-child(3)::after {
 					content: ' lang';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(4)::after {
+				section:nth-child(2) > span:nth-child(4)::before {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(5)::before {
+				section:nth-child(2) > span:nth-child(4)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(5)::after {
+				section:nth-child(2) > span:nth-child(5)::before {
 					content: 'en';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(6)::before {
+				section:nth-child(2) > span:nth-child(5)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(6)::after {
+				section:nth-child(2) > span:nth-child(6)::before {
 					content: '>\A\A<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(7)::before {
+				section:nth-child(2) > span:nth-child(6)::after {
 					content: 'head';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(7)::after {
+				section:nth-child(2) > span:nth-child(7)::before {
 					content: '>\A\9<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(8)::before {
+				section:nth-child(2) > span:nth-child(7)::after {
 					content: 'meta';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(8)::after {
+				section:nth-child(2) > span:nth-child(8)::before {
 					content: ' charset';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(9)::before {
+				section:nth-child(2) > span:nth-child(8)::after {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(9)::after {
+				section:nth-child(2) > span:nth-child(9)::before {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(10)::before {
+				section:nth-child(2) > span:nth-child(9)::after {
 					content: 'UTF-8';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(10)::after {
+				section:nth-child(2) > span:nth-child(10)::before {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(11)::before {
+				section:nth-child(2) > span:nth-child(10)::after {
 					content: ' />\A\9<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(11)::after {
+				section:nth-child(2) > span:nth-child(11)::before {
 					content: 'meta';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(12)::before {
+				section:nth-child(2) > span:nth-child(11)::after {
 					content: ' name';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(12)::after {
+				section:nth-child(2) > span:nth-child(12)::before {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(13)::before {
+				section:nth-child(2) > span:nth-child(12)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(13)::after {
+				section:nth-child(2) > span:nth-child(13)::before {
 					content: 'viewport';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(14)::before {
+				section:nth-child(2) > span:nth-child(13)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(14)::after {
+				section:nth-child(2) > span:nth-child(14)::before {
 					content: ' content';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(15)::before {
+				section:nth-child(2) > span:nth-child(14)::after {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(15)::after {
+				section:nth-child(2) > span:nth-child(15)::before {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(16)::before {
+				section:nth-child(2) > span:nth-child(15)::after {
 					content: 'width=device-width, initial-scale=1';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(16)::after {
+				section:nth-child(2) > span:nth-child(16)::before {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(17)::before {
+				section:nth-child(2) > span:nth-child(16)::after {
 					content: ' />\A\9<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(17)::after {
+				section:nth-child(2) > span:nth-child(17)::before {
 					content: 'meta';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(18)::before {
+				section:nth-child(2) > span:nth-child(17)::after {
 					content: ' name';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(18)::after {
+				section:nth-child(2) > span:nth-child(18)::before {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(19)::before {
+				section:nth-child(2) > span:nth-child(18)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(19)::after {
+				section:nth-child(2) > span:nth-child(19)::before {
 					content: 'description';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(20)::before {
+				section:nth-child(2) > span:nth-child(19)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(20)::after {
+				section:nth-child(2) > span:nth-child(20)::before {
 					content: ' content';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(21)::before {
+				section:nth-child(2) > span:nth-child(20)::after {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(21)::after {
+				section:nth-child(2) > span:nth-child(21)::before {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(22)::before {
+				section:nth-child(2) > span:nth-child(21)::after {
 					content: 'A page whose view-source is the page itself.';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(22)::after {
+				section:nth-child(2) > span:nth-child(22)::before {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(23)::before {
+				section:nth-child(2) > span:nth-child(22)::after {
 					content: ' />\A\9<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(23)::after {
+				section:nth-child(2) > span:nth-child(23)::before {
 					content: 'meta';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(24)::before {
+				section:nth-child(2) > span:nth-child(23)::after {
 					content: ' name';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(24)::after {
+				section:nth-child(2) > span:nth-child(24)::before {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(25)::before {
+				section:nth-child(2) > span:nth-child(24)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(25)::after {
+				section:nth-child(2) > span:nth-child(25)::before {
 					content: 'repository';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(26)::before {
+				section:nth-child(2) > span:nth-child(25)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(26)::after {
+				section:nth-child(2) > span:nth-child(26)::before {
 					content: ' content';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(27)::before {
+				section:nth-child(2) > span:nth-child(26)::after {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(27)::after {
+				section:nth-child(2) > span:nth-child(27)::before {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(28)::before {
+				section:nth-child(2) > span:nth-child(27)::after {
 					content: 'https://github.com/BenjaminAster/view-source';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(28)::after {
+				section:nth-child(2) > span:nth-child(28)::before {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(29)::before {
+				section:nth-child(2) > span:nth-child(28)::after {
 					content: ' />\A\A\9<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(29)::after {
+				section:nth-child(2) > span:nth-child(29)::before {
 					content: 'title';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(30)::before {
+				section:nth-child(2) > span:nth-child(29)::after {
 					content: '>';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(30)::after {
+				section:nth-child(2) > span:nth-child(30)::before {
 					content: 'view-source:https://benjaminaster.com/view-source/';
 				}
 
-				section:nth-child(2) > span:nth-child(31)::before {
+				section:nth-child(2) > span:nth-child(30)::after {
 					content: '</';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(31)::after {
+				section:nth-child(2) > span:nth-child(31)::before {
 					content: 'title';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(32)::before {
+				section:nth-child(2) > span:nth-child(31)::after {
 					content: '>\A</';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(32)::after {
+				section:nth-child(2) > span:nth-child(32)::before {
 					content: 'head';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(33)::before {
+				section:nth-child(2) > span:nth-child(32)::after {
 					content: '>\A\A<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(33)::after {
+				section:nth-child(2) > span:nth-child(33)::before {
 					content: 'body';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(34)::before {
+				section:nth-child(2) > span:nth-child(33)::after {
 					content: '>\A\9<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(34)::after {
+				section:nth-child(2) > span:nth-child(34)::before {
 					content: 'input';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(35)::before {
+				section:nth-child(2) > span:nth-child(34)::after {
 					content: ' type';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(35)::after {
+				section:nth-child(2) > span:nth-child(35)::before {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(36)::before {
+				section:nth-child(2) > span:nth-child(35)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(36)::after {
+				section:nth-child(2) > span:nth-child(36)::before {
 					content: 'checkbox';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(37)::before {
+				section:nth-child(2) > span:nth-child(36)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(37)::after {
+				section:nth-child(2) > span:nth-child(37)::before {
 					content: ' id';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(38)::before {
+				section:nth-child(2) > span:nth-child(37)::after {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(38)::after {
+				section:nth-child(2) > span:nth-child(38)::before {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(39)::before {
+				section:nth-child(2) > span:nth-child(38)::after {
 					content: 'line-wrap';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(39)::after {
+				section:nth-child(2) > span:nth-child(39)::before {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(40)::before {
+				section:nth-child(2) > span:nth-child(39)::after {
 					content: ' />\A\9<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(40)::after {
+				section:nth-child(2) > span:nth-child(40)::before {
 					content: 'header';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(41)::before {
+				section:nth-child(2) > span:nth-child(40)::after {
 					content: '><';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(41)::after {
+				section:nth-child(2) > span:nth-child(41)::before {
 					content: 'label';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(42)::before {
+				section:nth-child(2) > span:nth-child(41)::after {
 					content: ' for';
 					color: var(--attribute-color);
 					font-weight: var(--attribute-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(42)::after {
+				section:nth-child(2) > span:nth-child(42)::before {
 					content: '=';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(43)::before {
+				section:nth-child(2) > span:nth-child(42)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(43)::after {
+				section:nth-child(2) > span:nth-child(43)::before {
 					content: 'line-wrap';
 					color: var(--string-color);
 				}
 
-				section:nth-child(2) > span:nth-child(44)::before {
+				section:nth-child(2) > span:nth-child(43)::after {
 					content: '"';
 					color: var(--quote-color);
 				}
 
-				section:nth-child(2) > span:nth-child(44)::after {
+				section:nth-child(2) > span:nth-child(44)::before {
 					content: '>';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(45)::before {
+				section:nth-child(2) > span:nth-child(44)::after {
 					content: 'Line wrap';
 				}
 
-				section:nth-child(2) > span:nth-child(45)::after {
+				section:nth-child(2) > span:nth-child(45)::before {
 					content: '</';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(46)::before {
+				section:nth-child(2) > span:nth-child(45)::after {
 					content: 'label';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(46)::after {
+				section:nth-child(2) > span:nth-child(46)::before {
 					content: '></';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(47)::before {
+				section:nth-child(2) > span:nth-child(46)::after {
 					content: 'header';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(47)::after {
+				section:nth-child(2) > span:nth-child(47)::before {
 					content: '>\A\9<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(48)::before {
+				section:nth-child(2) > span:nth-child(47)::after {
 					content: 'main';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(48)::after {
+				section:nth-child(2) > span:nth-child(48)::before {
 					content: '>\A\9\9<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(49)::before {
+				section:nth-child(2) > span:nth-child(48)::after {
 					content: 'section';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(49)::after {
+				section:nth-child(2) > span:nth-child(49)::before {
 					content: '>\A\9\9\9<';
 					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(2) > span:nth-child(50)::before {
+				section:nth-child(2) > span:nth-child(49)::after {
 					content: 'p';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(2) > span:nth-child(50)::after {
+				section:nth-child(2) > span:nth-child(50)::before {
 					content: '>';
 					color: var(--angle-bracket-and-equals-color);
 				}
+
+				/* section:nth-child(2) > span:nth-child(50)::after {
+					content: '<!--';
+					color: var(--comment-color);
+					font-style: var(--comment-font-style);
+				} */
 
 				input[type=checkbox]#line-wrap:checked ~ main {
 					--white-space: pre-wrap;
 				}
 
 				section:nth-child(1) p {
-					display: inline;
+					/* display: inline; */
 					margin: unset;
 					font-size: unset;
 					font-weight: unset;
 					font-family: unset;
-					padding-inline-start: calc(var(--tab-size) * 4ch);
-				}
-
-				section:nth-child(1) p br {
-					content: "";
-					display: inline;
-				}
-
-				section:nth-child(1) p br::before,
-				section:nth-child(1) p br::after {
+					/* padding-inline-start: calc(var(--tab-size) * 4ch); */
 					white-space: var(--white-space);
-				}
-
-				section:nth-child(1) p br:nth-of-type(1)::before {
-					/* content: '\A\9\9\9\9'; */
-					content: '\A';
-					display: inline;
-				}
-
-				section:nth-child(1) p br:nth-of-type(2)::before {
-					content: '<\A<\A<\A<';
-					padding-inline-start: calc(var(--tab-size) * 4ch);
-					display: inline-block;
-					color: var(--angle-bracket-and-equals-color);
-				}
-
-				section:nth-child(1) p br:nth-of-type(2)::after {
-					content: 'br\A br\A br\A br';
-					display: inline-block;
-					color: var(--tag-color);
-					font-weight: var(--tag-font-weight);
-				}
-
-				section:nth-child(1) p br:nth-of-type(3)::before {
-					content: '/>\A/>\A/>\A/>';
-					display: inline-block;
-					color: var(--angle-bracket-and-equals-color);
-				}
-
-				section:nth-child(1) p br:nth-of-type(3)::after {
-					content: '\A';
-					display: inline;
-				}
-
-				section:nth-child(1) p br:nth-of-type(4)::before {
-					content: '';
-					display: inline;
-					padding-inline-start: calc(var(--tab-size) * 4ch);
+					margin-block: calc(var(--line-height) * -1);
 				}
 
 				section:nth-child(3) > span::before,
@@ -937,94 +983,556 @@
 				}
 
 				section:nth-child(3) > span:nth-child(4)::after {
-					content: '<!---->\A------>\A------>\A------>\A------>';
+					content: '<!---->\A------>\A------>\A------>\A------>\A------>\A------>\A------>\A------>\A------>';
 					color: var(--comment-color);
 					font-style: var(--comment-font-style);
 					display: inline-block;
 				}
 
 				section:nth-child(3) > span:nth-child(5)::before {
-					content: '<\A<\A<\A<\A<';
+					content: '<\A<\A<\A<\A<\A<\A<\A<\A<\A<';
 					color: var(--angle-bracket-and-equals-color);
 					display: inline-block;
 				}
 
-				section:nth-child(3) > span:nth-child(n + 5):not(:nth-child(n + 25))::after {
-					content: 'span\Aspan\Aspan\Aspan\Aspan';
+				section:nth-child(3) > span:nth-child(n + 5):not(:nth-child(n + 15))::after {
+					content: 'span\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan';
 					color: var(--tag-color);
 					font-weight: var(--tag-font-weight);
 					display: inline-block;
 				}
 
-				section:nth-child(3) > span:nth-child(2n + 7):not(:nth-child(n + 25))::before {
-					content: '><\A><\A><\A><\A><';
+				section:nth-child(3) > span:nth-child(2n + 6):not(:nth-child(n + 15))::before {
+					content: '></\A></\A></\A></\A></\A></\A></\A></\A></\A></';
 					color: var(--angle-bracket-and-equals-color);
 					display: inline-block;
 				}
 
-				section:nth-child(3) > span:nth-child(2n + 6):not(:nth-child(n + 25))::before {
-					content: '></\A></\A></\A></\A></';
+				section:nth-child(3) > span:nth-child(2n + 7):not(:nth-child(n + 14))::before {
+					content: '><\A><\A><\A><\A><\A><\A><\A><\A><\A><';
 					color: var(--angle-bracket-and-equals-color);
 					display: inline-block;
 				}
 
-				section:nth-child(3) > span:nth-child(25)::after {
-					content: '>\A>\A>\A>\A>';
+				section:nth-child(3) > span:nth-child(15)::before {
+					content: '>\A>\A>\A>\A>\A>\A>\A>\A>\A>';
 					color: var(--angle-bracket-and-equals-color);
 					display: inline-block;
 				}
 
-				section:nth-child(3) > span:nth-child(26)::before {
-					content: '<!--\A<!--\A<!--\A<!--\A  ';
+				section:nth-child(3) > span:nth-child(15)::after {
+					content: '<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A  ';
 					color: var(--comment-color);
 					font-style: var(--comment-font-style);
 					display: inline-block;
 				}
 
-				section:nth-child(3) > span:nth-child(8)::after {
+				section:nth-child(3) > span:nth-child(16)::before {
+					content: '\A\9\9</';
+					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(3) > span:nth-child(9)::before {
+				section:nth-child(3) > span:nth-child(16)::after {
+					content: 'section';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(3) > span:nth-child(9)::after {
+				section:nth-child(3) > span:nth-child(17)::before {
+					content: '>\A\A\9\9<';
+					color: var(--angle-bracket-and-equals-color);
 				}
 
-				section:nth-child(3) > span:nth-child(10)::before {
+				section:nth-child(3) > span:nth-child(17)::after {
+					content: 'section';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
 				}
 
-				section:nth-child(3) > span:nth-child(10)::after {
+				section:nth-child(3) > span:nth-child(18)::before {
+					content: '>\A\9\9\9';
+					color: var(--angle-bracket-and-equals-color);
 				}
 
-				main::before {
-					/* content: '<!DOCTYPE html>\A<html lang="en">\A\A<head>\A\9<meta charset="UTF-8" />\A\9<meta name="viewport" content="width=device-width, initial-scale=1" />\A\A\9<title>view-source:https://benjaminaster.com/view-source/</title>\A</head>\A\A<body>\A\9<input type="checkbox" id="line-wrap" />\A\9<header><label for="line-wrap">Line wrap</label></header>\A\9<aside>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9\9<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>\A\9</aside>\A\9<main>'; */
+
+				section:nth-child(3) > span:nth-child(18)::after {
+					content: '<!---->\A------>\A------>\A------>\A------>\A------>\A------>\A------>\A------>\A------>';
+					color: var(--comment-color);
+					font-style: var(--comment-font-style);
+					display: inline-block;
+				}
+
+				section:nth-child(3) > span:nth-child(19)::before {
+					content: '<\A<\A<\A<\A<\A<\A<\A<\A<\A<';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(3) > span:nth-child(n + 19):not(:nth-child(n + 29))::after {
+					content: 'span\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+					display: inline-block;
+				}
+
+				section:nth-child(3) > span:nth-child(2n + 20):not(:nth-child(n + 30))::before {
+					content: '></\A></\A></\A></\A></\A></\A></\A></\A></\A></';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(3) > span:nth-child(2n + 21):not(:nth-child(n + 28))::before {
+					content: '><\A><\A><\A><\A><\A><\A><\A><\A><\A><';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(3) > span:nth-child(29)::before {
+					content: '>\A>\A>\A>\A>\A>\A>\A>\A>\A>';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(3) > span:nth-child(29)::after {
+					content: '<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A  ';
+					color: var(--comment-color);
+					font-style: var(--comment-font-style);
+					display: inline-block;
+				}
+
+				section:nth-child(3) > span:nth-child(30)::before {
+					content: '\A\9\9</';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(3) > span:nth-child(30)::after {
+					content: 'section';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(3) > span:nth-child(31)::before {
+					content: '>\A\A\9\9<';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(3) > span:nth-child(31)::after {
+					content: 'section';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(3) > span:nth-child(32)::before {
+					content: '>\A\9\9\9<';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(3) > span:nth-child(32)::after {
+					content: 'style';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(3) > span:nth-child(33)::before {
+					content: '>';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(5) > span::before,
+				section:nth-child(5) > span::after {
 					white-space: var(--white-space);
 				}
 
-				main::after {
-					/* content: '\9</main>\A</body>\A\A</html>'; */
+				section:nth-child(5) > span:nth-child(1)::before {
+					content: '\9\9\9</';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(5) > span:nth-child(1)::after {
+					content: 'style';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(5) > span:nth-child(2)::before {
+					content: '>\A\9\9</';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(5) > span:nth-child(2)::after {
+					content: 'section';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(5) > span:nth-child(3)::before {
+					content: '>\A\A\9\9<';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(5) > span:nth-child(3)::after {
+					content: 'section';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(5) > span:nth-child(4)::before {
+					content: '>\A\9\9\9';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(5) > span:nth-child(4)::after {
+					color: var(--comment-color);
+					font-style: var(--comment-font-style);
+				}
+
+				section:nth-child(5) > span:nth-child(5)::before {
+					content: '<!---->\A------>\A------>\A------>\A------>\A------>\A------>\A------>\A------>\A------>';
+					color: var(--comment-color);
+					font-style: var(--comment-font-style);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(5)::after {
+					content: '<\A<\A<\A<\A<\A<\A<\A<\A<\A<';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(n + 6):not(:nth-child(n + 16))::before {
+					content: 'span\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(2n + 6):not(:nth-child(n + 15))::after {
+					content: '></\A></\A></\A></\A></\A></\A></\A></\A></\A></';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(2n + 7):not(:nth-child(n + 14))::after {
+					content: '><\A><\A><\A><\A><\A><\A><\A><\A><\A><';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(15)::after {
+					content: '>\A>\A>\A>\A>\A>\A>\A>\A>\A>';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(16)::before {
+					content: '<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--';
+					color: var(--comment-color);
+					font-style: var(--comment-font-style);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(16)::after {
+					content: '\A\A\9\9\9';
+				}
+
+				section:nth-child(5) > span:nth-child(17)::before {
+					content: '------>\A------>\A------>\A------>\A------>\A------>\A------>\A------>\A------>\A------>';
+					color: var(--comment-color);
+					font-style: var(--comment-font-style);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(17)::after {
+					content: '<\A<\A<\A<\A<\A<\A<\A<\A<\A<';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(n + 18):not(:nth-child(n + 28))::before {
+					content: 'span\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan\Aspan';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(2n + 18):not(:nth-child(n + 27))::after {
+					content: '></\A></\A></\A></\A></\A></\A></\A></\A></\A></';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(2n + 19):not(:nth-child(n + 26))::after {
+					content: '><\A><\A><\A><\A><\A><\A><\A><\A><\A><';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(27)::after {
+					content: '>\A>\A>\A>\A>\A>\A>\A>\A>\A>';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(28)::before {
+					content: '<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--\A<!--';
+					color: var(--comment-color);
+					font-style: var(--comment-font-style);
+					display: inline-block;
+				}
+
+				section:nth-child(5) > span:nth-child(15)::before {
+				}
+
+				section:nth-child(5) > span:nth-child(15)::after {
+				}
+
+
+				section:nth-child(6) > span::before,
+				section:nth-child(6) > span::after {
 					white-space: var(--white-space);
 				}
+
+				section:nth-child(6) > span:nth-child(1)::before {
+					content: '\9\9\9';
+				}
+
+				section:nth-child(6) > span:nth-child(11n + 1)::after {
+					content: '<\A<\A<\A<\A<\A<\A<\A<\A<\A<';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(6) > span:nth-child(n + 2):not(:is(:nth-child(11n + 12)))::before {
+					content: 'li\Ali\Ali\Ali\Ali\Ali\Ali\Ali\Ali\Ali';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+					display: inline-block;
+				}
+
+				section:nth-child(6) > span:nth-child(n + 2):not(:is(:nth-child(11n + 11), :nth-child(11n + 12)))::after {
+					content: '><\A><\A><\A><\A><\A><\A><\A><\A><\A><';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(6) > span:nth-child(11n)::after {
+					content: '>\A>\A>\A>\A>\A>\A>\A>\A>\A>';
+					color: var(--angle-bracket-and-equals-color);
+					display: inline-block;
+				}
+
+				section:nth-child(6) > span:nth-child(11n + 12)::before {
+					content: '\A\A\9\9\9';
+				}
+
+				section:nth-child(7) > span::before,
+				section:nth-child(7) > span::after {
+					white-space: var(--white-space);
+				}
+
+				section:nth-child(7) > span:nth-child(1)::before {
+					content: '\9\9</';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(7) > span:nth-child(1)::after {
+					content: 'ul';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(7) > span:nth-child(2)::before {
+					content: '>\A\9</';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(7) > span:nth-child(2)::after {
+					content: 'aside';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(7) > span:nth-child(3)::before {
+					content: '>\A</';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(7) > span:nth-child(3)::after {
+					content: 'body';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(7) > span:nth-child(4)::before {
+					content: '>\A\A</';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
+				section:nth-child(7) > span:nth-child(4)::after {
+					content: 'html';
+					color: var(--tag-color);
+					font-weight: var(--tag-font-weight);
+				}
+
+				section:nth-child(7) > span:nth-child(5)::before {
+					content: '>';
+					color: var(--angle-bracket-and-equals-color);
+				}
+
 			</style>
 		</section>
-		
+
 		<section>
-			<div>end</div>
+			<!----><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span>
+		</section>
+
+		<section>
+			<!----><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span>
+		</section>
+
+		<section>
+			<!----><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span><!--
+			------><span></span><span></span><span></span><span></span><span></span>
 		</section>
 	</main>
 	<aside>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-		<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		<ul>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+			<li><li><li><li><li><li><li><li><li><li>
+		</ul>
 	</aside>
 </body>
 
