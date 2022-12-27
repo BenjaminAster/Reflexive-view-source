@@ -2,10 +2,12 @@
 	<style>
 		:root {
 			color-scheme: dark light;
+			--color: lightBlue;
 		}
 
 		@media (prefers-color-scheme: light) {
 			:root {
+				--color: blue;
 			}
 		}
 
@@ -14,7 +16,7 @@
 			font-family: system-ui, sans-serif;
 			dominant-baseline: central;
 			text-anchor: middle;
-			fill: lightBlue;
+			fill: var(--color);
 		}
 	</style>
 
